@@ -6,6 +6,10 @@ import WelcomeSection from "./components/WelcomeSection";
 import { motion } from "framer-motion";
 import Gallery from "./components/Gallery";
 import { FaGoogle, FaWaze } from "react-icons/fa";
+import Objective from "./components/Objective";
+import ScheduledActivities from "./components/ScheduledActivities";
+import GroupSchedules from "./components/GroupSchedules";
+import HowToHelp from "./components/HowToHelp";
 // import Image from "next/image";
 
 export default function Home() {
@@ -17,7 +21,7 @@ export default function Home() {
 
       <main>
         {/* Seção de Boas-Vindas */}
-        <section className="py-12">
+        <section className="py-12" id="sobre">
           <div className="container mx-auto px-4">
             {/* Adicione sua imagem da oficina e o texto aqui */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -53,71 +57,29 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Seção: Missão a Acimo */}
-        <section className="p-12 flex items-center justify-center">
-          <div className="inset-0 bg-opacity-50 rounded-lg shadow-lg mb-12"></div>
-          <motion.div
-            className="text-center text-gray-600 bg-gray-50 p-8 rounded-lg shadow-lg"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-3xl font-bold mb-6">Nossa Missão</h2>
-            <ul>
-              <li>Promover o envelhecimento saudável e a autonomia.</li>
-              <li>Fortalecer os vínculos familiares e o convívio comunitário.</li>
-              <li>Prevenir riscos sociais e estimular a participação ativa.</li>
-              <li>Fomentar a inclusão digital e o aprendizado contínuo.</li>
-            </ul>
-          </motion.div>
-        </section>
+        <div className='flex items-center justify-center'>
+          <ScheduledActivities />
+        </div>
 
-
-        {/* Seção: Youtube */}
-        {/* <section className="py-12 bg-gray-100">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Veja Nosso Trabalho em Ação</h2>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-              <div className="flex-1">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-700">Soldagem Profissional</h3>
-                <p className="text-lg text-gray-700 mb-4">
-                  Assista ao vídeo para ver como nossa equipe realiza soldagem com precisão e qualidade.
-                  Utilizamos equipamentos de ponta e técnicas avançadas para garantir a máxima durabilidade e
-                  segurança em todos os nossos serviços de soldagem. Confie na nossa experiência para manter
-                  seu veículo em perfeitas condições.
-                </p>
-              </div>
-              <div className="w-full md:w-1/2">
-                <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
-                  <iframe
-                    src="https://www.youtube.com/embed/Sy0e97ej-78?autoplay=1&modestbranding=1"
-                    frameBorder="0"
-                    allow="autoplay; encrypted-media"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    title="Vídeo de Solda"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-
-
-
+        <div className='flex items-center justify-center'>
+          <GroupSchedules />
+        </div>
 
 
         <div className='flex items-center justify-center'>
-          {/* <Services /> */}
+          <Objective />
         </div>
 
         <Gallery />
 
 
-
         {/* Seção: Formulário de Contato */}
         {/* <SendEmail /> */}
+
+
+        <div className='flex items-center justify-center'>
+          <HowToHelp />
+        </div>
 
         {/* Seção: Mapa de Localização */}
         <section className="py-12 bg-gray-50">
@@ -145,7 +107,7 @@ export default function Home() {
                     <FaGoogle className="mr-2" /> Ver no Google Maps
                   </a>
                   <a
-                    href="https://waze.com/ul?ll=-23.5374168,-46.7942078&navigate=yes"
+                    href="https://ul.waze.com/ul?place=ChIJi-5kzJf_zpQRlxGU0W5z_LY&ll=-23.54835300%2C-46.79844420&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"

@@ -9,7 +9,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear()
 
     return (
-        <footer className="bg-indigo-800 text-white">
+        <footer className="bg-indigo-800 text-white" id='footer'>
             <div className="container mx-auto px-4 py-8">
                 {/* Grid layout para organizar as seções */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -37,7 +37,7 @@ const Footer = () => {
                     {/* Horário de Funcionamento */}
                     <div className="flex flex-col">
                         <h3 className="text-xl font-semibold mb-2"><IoMdTime className="inline mr-2" />Horário de Funcionamento</h3>
-                        <p className='text-gray-300'>Terça a Sexta: 08:00 - 18:00</p>
+                        <p className='text-gray-300'>Terça a Sexta: 08:00 - 17:00</p>
                         {/* <p className='text-gray-300'>Sábado: 08:00 - 12:00</p> */}
                     </div>
                     {/* Endereço e Mapa */}

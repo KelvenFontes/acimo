@@ -20,6 +20,14 @@ const WelcomeSection = () => {
                 >
                     Associação de Idosos do Município de Osasco
                 </motion.p>
+                <motion.p
+                    className="mt-4 text-xl text-center text-gray-700"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                >
+                    Desde 1987, promovendo inclusão, valorização e qualidade de vida para idosos.
+                </motion.p>
             </div>
         </section>
     );
