@@ -2,8 +2,9 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import WelcomeSection from "@/components/WelcomeSection";
+import WelcomeSection from "./components/WelcomeSection";
 import { motion } from "framer-motion";
+import Gallery from "./components/Gallery";
 // import Image from "next/image";
 
 export default function Home() {
@@ -110,7 +111,7 @@ export default function Home() {
           {/* <Services /> */}
         </div>
 
-        {/* <Gallery /> */}
+        <Gallery />
 
 
 
