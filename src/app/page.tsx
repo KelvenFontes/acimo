@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import WelcomeSection from "./components/WelcomeSection";
 import { motion } from "framer-motion";
 import Gallery from "./components/Gallery";
+import { FaGoogle, FaWaze } from "react-icons/fa";
 // import Image from "next/image";
 
 export default function Home() {
@@ -141,7 +142,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-green-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-green-700 transition-colors duration-300"
                   >
-                    {/* <FaGookgle kclassName="mr-2" /> Ver no Google Maps */}
+                    <FaGoogle className="mr-2" /> Ver no Google Maps
                   </a>
                   <a
                     href="https://waze.com/ul?ll=-23.5374168,-46.7942078&navigate=yes"
@@ -149,7 +150,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
                   >
-                    {/* <FaWaze size={20} className="mr-2" /> Ver no Waze */}
+                    <FaWaze size={20} className="mr-2" /> Ver no Waze
                   </a>
                 </div>
               </div>
